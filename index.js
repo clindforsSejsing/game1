@@ -31,28 +31,28 @@ function generateBatmanChoice() {
 
 function getResult() {
     if (batmanChoice === userChoice) {
-        result = 'Jämt!'
+        result = '⚖️'
     }
     if (batmanChoice === '🪨' && userChoice === '✂️') {
-        result = '🦇Batman vann!';
+        result = '🦇';
     }
     if (batmanChoice === '🪨' && userChoice === '🛍️') {
-        result = '🥳Du vann!';
+        result = '🏆';
     }
     if (batmanChoice === '✂️' && userChoice === '🪨') {
-        result = '🥳Du vann!';
+        result = '🏆';
     }
     if (batmanChoice === '✂️' && userChoice === '🛍️') {
-        result = '🦇Batman vann!';
+        result = '🦇';
     }
     if (batmanChoice === '🛍️' && userChoice === '✂️') {
-        result = '🥳Du vann!';
+        result = '🏆';
     }
     if (batmanChoice === '🛍️' && userChoice === '🪨') {
-        result = '🦇Batman vann!';
+        result = '🦇!';
     }
     if (userChoice === '🔦-✂️' || userChoice === '💩-🍕') {
-        result = '🥳 Du vann!'
+        result = '🏆'
     }
 
 
