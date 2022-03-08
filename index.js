@@ -18,42 +18,43 @@ function generateBatmanChoice() {
     // console.log(randomNumber);
 
     if (randomNumber === 1) {
-        batmanChoice = "sten";
+        batmanChoice = "🪨";
     }
     if (randomNumber === 2) {
-        batmanChoice = "sax";
+        batmanChoice = "✂️";
     }
     if (randomNumber === 3) {
-        batmanChoice = "påse";
+        batmanChoice = "🛍️";
     }
     batmanChoiceDisplay.innerHTML = batmanChoice;
 }
 
 function getResult() {
     if (batmanChoice === userChoice) {
-        result = 'Ingen vann!'
+        result = 'Jämt!'
     }
-    if (batmanChoice === 'sten' && userChoice === 'sax') {
+    if (batmanChoice === '🪨' && userChoice === '✂️') {
         result = '🦇Batman vann!';
     }
-    if (batmanChoice === 'sten' && userChoice === 'påse') {
+    if (batmanChoice === '🪨' && userChoice === '🛍️') {
         result = '🥳Du vann!';
     }
-    if (batmanChoice === 'sax' && userChoice === 'sten') {
+    if (batmanChoice === '✂️' && userChoice === '🪨') {
         result = '🥳Du vann!';
     }
-    if (batmanChoice === 'sax' && userChoice === 'påse') {
+    if (batmanChoice === '✂️' && userChoice === '🛍️') {
         result = '🦇Batman vann!';
     }
-    if (batmanChoice === 'påse' && userChoice === 'sax') {
+    if (batmanChoice === '🛍️' && userChoice === '✂️') {
         result = '🥳Du vann!';
     }
-    if (batmanChoice === 'påse' && userChoice === 'sten') {
+    if (batmanChoice === '🛍️' && userChoice === '🪨') {
         result = '🦇Batman vann!';
     }
-    if (userChoice === 'laser-sax' || userChoice === 'bajs-pizza') {
+    if (userChoice === '🔦-✂️' || userChoice === '💩-🍕') {
         result = '🥳 Du vann!'
     }
+
 
     resultDisplay.innerHTML = result;
 }
