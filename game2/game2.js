@@ -97,19 +97,14 @@ const cardArray = [
     },
 ]
 
-// console.log(cardArray);
 //a way of mixing the cards up with sort and math random
 cardArray.sort(() => 0.5 - Math.random());
-
-// console.log(cardArray);
 
 const gridMemory = document.querySelector('#grid');
 
 let cardsChosen = [];
 let cardsChosenId = [];
 let cardsWon = [];
-
-// console.log(gridMemory);
 
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
