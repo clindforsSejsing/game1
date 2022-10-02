@@ -15,7 +15,6 @@ possibleChoices.forEach(button => button.addEventListener('click', (event) => {
 
 function generateBatmanChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1);
-    // console.log(randomNumber);
 
     if (randomNumber === 1) {
         batmanChoice = "🪨";
